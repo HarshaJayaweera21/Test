@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--Font Link-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <!--CSS Links-->
+    <link rel="stylesheet" href="./CSS/Reset style sheet.css" type="text/css">
+    <link rel="stylesheet" href="./CSS/Home page.css" type="text/css">
+    <link rel="stylesheet" href="./CSS/Vegetables page.css" type="text/css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <!-- Search Bar Link-->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
+    <!--Favicon-->
+    <link rel="icon" type="icon" href="./Images/letter-f.png">
+    <title>Fresh Foods Online </title>
+</head>
+<body>
+    <header class="header-main">
+        <!--LOGO-->
+        <section class="logo">
+            <a href="./Home page.html" ><img src="./Images/LOGO.png" class="logo" alt="logo" width="500px"></a>
+        </section>
+        <!--Search Bar-->
+        <section class="search">
+            <span class="search-icon material-symbols-outlined">search</span>
+            <input class="search-input" type="search" placeholder="Search Products ..... " name="" id="">
+        </section>
+        <section class="menu-main">
+            <!--Login/Signup Link-->
+            <section class="login-signup">
+                <ul>
+                    <li><button><a href="#"><i class="fa fa-sign-in" aria-hidden="true"></i>Login/Sign Up</a></button></li>
+                    <li><a href="#"><svg class="cart-icon" xmlns="http://www.w3.org/2000/svg" height="35px" viewBox="0 -960 960 960" width="35px" fill="#FFFFFF"><path d="M280-80q-33 0-56.5-23.5T200-160q0-33 23.5-56.5T280-240q33 0 56.5 23.5T360-160q0 33-23.5 56.5T280-80Zm400 0q-33 0-56.5-23.5T600-160q0-33 23.5-56.5T680-240q33 0 56.5 23.5T760-160q0 33-23.5 56.5T680-80ZM246-720l96 200h280l110-200H246Zm-38-80h590q23 0 35 20.5t1 41.5L692-482q-11 20-29.5 31T622-440H324l-44 80h480v80H280q-45 0-68-39.5t-2-78.5l54-98-144-304H40v-80h130l38 80Zm134 280h280-280Z"/></svg></a></li>
+                </ul>
+            </section>
+            <!--NAV Bar and Menu Button-->
+            <nav class="menu">
+                <ul>
+                    <li><button class="menu-items"><a href="./Home page.html">Home</a></button></li>
+                    <li><button class="menu-items"><a href="./Order page.html">Order</a></button></li>
+                    <li><button class="menu-items"><a href="./Registration page.html">Registration</a></button></li>
+                    <li><button class="menu-items"><a href="./About Us page.html">About Us</a></button></li>
+                    <li class="menu-button" onclick=showSidebar()><button><a href="#"><svg xmlns="http://www.w3.org/2000/svg" height="25" viewBox="0 -960 960 960" width="25" fill="#FFFFFF"><path d="M120-240v-80h720v80H120Zm0-200v-80h720v80H120Zm0-200v-80h720v80H120Z"/></svg></a></button></li>
+                </ul>
+                <ul class="sidebar">
+                    <li class="cross-button" onclick=hideSidebar()><a href="#"><svg xmlns="http://www.w3.org/2000/svg" height="26" viewBox="0 -960 960 960" width="26" fill="#FFFFFF"><path d="m256-200-56-56 224-224-224-224 56-56 224 224 224-224 56 56-224 224 224 224-56 56-224-224-224 224Z"/></svg></a></li>
+                    <li><a href="./Home page.html">Home</a></li>
+                    <li><a href="./Order page.html">Order</a></li>
+                    <li><a href="./Registration page.html">Registration</a></li>
+                    <li><a href="./About Us page.html">About Us</a></li>
+                </ul>
+            </nav>
+            <script>
+                function showSidebar() {
+                    const sidebar = document.querySelector('.sidebar')
+                    sidebar.style.display = 'flex'
+                }
+                function hideSidebar() {
+                    const sidebar = document.querySelector('.sidebar')
+                    sidebar.style.display = 'none'
+                }
+            </script>
+        </section>
+    </header>
+    <main>
+        <!--Products Section-->
+        <section class="products">
+            <section class="banner">
+                <img src="./Images/Bakery banner.png" alt="">
+            </section>
+            <br>
+            <section class="vegetables-container">
+                <section class="box">
+                    <img src="./Images/Bakery/top crust bread.jpg" alt="#">
+                    <h3>Top Crust Bread 450g</h3>
+                    <p>Rs 149.00</p>
+                    <button><a href="./Order page.html" class="btn"><i class="fa fa-shopping-cart" aria-hidden="true"></i>Add to Cart</a></button>
+                </section>
+                <section class="box">
+                    <img src="./Images/Bakery/sandwich bread 750g.jpg" alt="#">
+                    <h3>Sandwich Bread 750g</h3>
+                    <p>Rs 380.00</p>
+                    <button><a href="./Order page.html" class="btn"><i class="fa fa-shopping-cart" aria-hidden="true"></i>Add to Cart</a></button>
+                </section>
+                <section class="box">
+                    <img src="./Images/Bakery/sandwich bread 450g.jpg" alt="#">
+                    <h3>Sandwich Bread 450g</h3>
+                    <p>Rs 60.00</p>
+                    <button><a href="./Order page.html" class="btn"><i class="fa fa-shopping-cart" aria-hidden="true"></i>Add to Cart</a></button>
+                </section>
+                <section class="box">
+                    <img src="./Images/Bakery/dinner bun.jpg" alt="#">
+                    <h3>Dinner Bun</h3>
+                    <p>Rs 180.00</p>
+                    <button><a href="./Order page.html" class="btn"><i class="fa fa-shopping-cart" aria-hidden="true"></i>Add to Cart</a></button>
+                </section>
+                <section class="box">
+                    <img src="./Images/Bakery/cheese & onion bread.jpg" alt="#">
+                    <h3>Cheese & Onion Bread</h3>
+                    <p>Rs 385.00</p>
+                    <button><a href="./Order page.html" class="btn"><i class="fa fa-shopping-cart" aria-hidden="true"></i>Add to Cart</a></button>
+                </section>
+                <section class="box">
+                    <img src="./Images/Bakery/french bread.jpg" alt="#">
+                    <h3>French Bread</h3>
+                    <p>Rs 295.00</p>
+                    <button><a href="./Order page.html" class="btn"><i class="fa fa-shopping-cart" aria-hidden="true"></i>Add to Cart</a></button>
+                </section>
+                <section class="box">
+                    <img src="./Images/Bakery/roast bread.jpg" alt="#">
+                    <h3>Roast Bread</h3>
+                    <p>Rs 135.00</p>
+                    <button><a href="./Order page.html" class="btn"><i class="fa fa-shopping-cart" aria-hidden="true"></i>Add to Cart</a></button>
+                </section>
+                <section class="box">
+                    <img src="./Images/Bakery/chelsea bun.jpg" alt="#">
+                    <h3>Chelsea Bun</h3>
+                    <p>Rs 265.00</p>
+                    <button><a href="./Order page.html" class="btn"><i class="fa fa-shopping-cart" aria-hidden="true"></i>Add to Cart</a></button>
+                </section>
+                <section class="box">
+                    <img src="./Images/Bakery/hot dog.jpg" alt="#">
+                    <h3>Hot Dog</h3>
+                    <p>Rs 285.00</p>
+                    <button><a href="./Order page.html" class="btn"><i class="fa fa-shopping-cart" aria-hidden="true"></i>Add to Cart</a></button>
+                </section>
+                <section class="box">
+                    <img src="./Images/Bakery/omelette bun.jpg" alt="#">
+                    <h3>Omelette Bun</h3>
+                    <p>Rs 165.00</p>
+                    <button><a href="./Order page.html" class="btn"><i class="fa fa-shopping-cart" aria-hidden="true"></i>Add to Cart</a></button>
+                </section>
+                <section class="box">
+                    <img src="./Images/Bakery/chicken sausage roll.jpg" alt="#">
+                    <h3>Chicken Sausage Roll</h3>
+                    <p>Rs 190.00</p>
+                    <button><a href="./Order page.html" class="btn"><i class="fa fa-shopping-cart" aria-hidden="true"></i>Add to Cart</a></button>
+                </section>
+                <section class="box">
+                    <img src="./Images/Bakery/Chocolate muffin.jpg" alt="#">
+                    <h3>Chocolate Muffin</h3>
+                    <p>Rs 250.00</p>
+                    <button><a href="./Order page.html" class="btn"><i class="fa fa-shopping-cart" aria-hidden="true"></i>Add to Cart</a></button>
+                </section>
+                <section class="box">
+                    <img src="./Images/Bakery/egg bun.jpg" alt="#">
+                    <h3>Egg Bun</h3>
+                    <p>Rs 145.00</p>
+                    <button><a href="./Order page.html" class="btn"><i class="fa fa-shopping-cart" aria-hidden="true"></i>Add to Cart</a></button>
+                </section>
+                <section class="box">
+                    <img src="./Images/Bakery/Chocolate crossaint.jpg" alt="#">
+                    <h3>Chocolate Croissant</h3>
+                    <p>Rs 230.00</p>
+                    <button><a href="./Order page.html" class="btn"><i class="fa fa-shopping-cart" aria-hidden="true"></i>Add to Cart</a></button>
+                </section>
+                <section class="box">
+                    <img src="./Images/Bakery/chicken samosa.jpg" alt="#">
+                    <h3>Chicken Samosa</h3>
+                    <p>Rs 155.00</p>
+                    <button><a href="./Order page.html" class="btn"><i class="fa fa-shopping-cart" aria-hidden="true"></i>Add to Cart</a></button>
+                </section>
+                <section class="box">
+                    <img src="./Images/Bakery/vegetable puff.jpg" alt="#">
+                    <h3>Vegetable Puff</h3>
+                    <p>Rs 180.00</p>
+                    <button><a href="./Order page.html" class="btn"><i class="fa fa-shopping-cart" aria-hidden="true"></i>Add to Cart</a></button>
+                </section>
+                <section class="box">
+                    <img src="./Images/Bakery/fish roll.jpg" alt="#">
+                    <h3>Fish Roll</h3>
+                    <p>Rs 140.00</p>
+                    <button><a href="./Order page.html" class="btn"><i class="fa fa-shopping-cart" aria-hidden="true"></i>Add to Cart</a></button>
+                </section>
+                <section class="box">
+                    <img src="./Images/Bakery/cookies.jpg" alt="#">
+                    <h3>Cookies</h3>
+                    <p>Rs 340.00</p>
+                    <button><a href="./Order page.html" class="btn"><i class="fa fa-shopping-cart" aria-hidden="true"></i>Add to Cart</a></button>
+                </section>
+            </section>
+        </section> 
+    </main>
+    <footer>
+        <section class="footer-main">
+            <!--Info-->
+            <section class="info">
+                <a href="./Home page.html" ><img src="./Images/-high-resolution-logo-white-transparent.png" class="cart-icon" alt="cart icon" width="140px"></a>
+                <ul>
+                    <li><i class="fa fa-map-marker" aria-hidden="true"></i>Fresh Foods marketing Services Pvt Ltd.<br>
+                        No:148, Vauxhall Street, Colombo 2, Sri Lanka.</li>
+                    <li><i class="fa fa-envelope" aria-hidden="true"></i>FreshFoods@Gmail.com</li>
+                    <li><i class="fa fa-phone" aria-hidden="true"></i>+94 11 2303500</li>
+                    <li>(Daily operating hours 8.00a.m to 8.00p.m)</li>
+                </ul>
+            </section>
+            <!--Social Media Links-->
+            <section class="social-links">
+                <p>Follow Us</p>
+                <ul>
+                    <li><a href="#"><i class="fa fa-facebook"></i></a></li>
+                    <li><a href="#"><i class="fa fa-twitter"></i></a></li>
+                    <li><a href="#"><i class="fa fa-google"></i></a></li>
+                    <li><a href="#"><i class="fa fa-instagram"></i></a></li>
+                </ul>
+            </section>
+            <!--Customer Links-->
+            <section class="customerservice-links">
+                <h1>Customer Service</h1>
+                <ul>
+                    <li><a href="#">Contact Us</a></li>
+                    <li><a href="./About Us page.html">About Us</a></li>
+                </ul>
+            </section>
+        </section>
+        <section class="footer-bottom">
+            <section class="copyright">
+                <p>Copyright &copy;2024 Fresh Foods Marketing Services (Pvt) Ltd. All Rights Reserved</p>
+            </section>
+            <section class="payment-icons">
+                <img src="./Images/master card1.png"  class="mastercard-logo" alt="mastercard-logo">
+                <img src="./Images/visa1.png" class="visa-logo" alt="visa-logo">
+                <img src="./Images/american-express1.png" class="Aexpress-logo" alt="Aexpress-logo">
+            </section>
+        </section>
+    </footer>
+</body>
+</html>

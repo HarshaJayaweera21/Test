@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--Font Link-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <!--CSS Links-->
+    <link rel="stylesheet" href="./CSS/Reset style sheet.css" type="text/css">
+    <link rel="stylesheet" href="./CSS/Home page.css" type="text/css">
+    <link rel="stylesheet" href="./CSS/About us page.css" type="text/css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <!-- Search Bar Link-->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
+    <!--Favicon-->
+    <link rel="icon" type="icon" href="./Images/letter-f.png">
+    <title>Fresh Foods Online </title>
+</head>
+<body>
+    <header class="header-main">
+        <!--LOGO-->
+        <section class="logo">
+            <a href="./Home page.html" ><img src="./Images/LOGO.png" class="logo" alt="logo" width="500px"></a>
+        </section>
+        <section class="menu-main">
+            <!--Login/Signup Link-->
+            <section class="login-signup">
+                <ul>
+                    <li><button><a href="#"><i class="fa fa-sign-in" aria-hidden="true"></i>Login/Sign Up</a></button></li>
+                    <li><a href="#"><svg class="cart-icon" xmlns="http://www.w3.org/2000/svg" height="35px" viewBox="0 -960 960 960" width="35px" fill="#FFFFFF"><path d="M280-80q-33 0-56.5-23.5T200-160q0-33 23.5-56.5T280-240q33 0 56.5 23.5T360-160q0 33-23.5 56.5T280-80Zm400 0q-33 0-56.5-23.5T600-160q0-33 23.5-56.5T680-240q33 0 56.5 23.5T760-160q0 33-23.5 56.5T680-80ZM246-720l96 200h280l110-200H246Zm-38-80h590q23 0 35 20.5t1 41.5L692-482q-11 20-29.5 31T622-440H324l-44 80h480v80H280q-45 0-68-39.5t-2-78.5l54-98-144-304H40v-80h130l38 80Zm134 280h280-280Z"/></svg></a></li>
+                </ul>
+            </section>
+            <!--NAV Bar and Menu Button-->
+            <nav class="menu">
+                <ul>
+                    <li><button class="menu-items"><a href="./Home page.html">Home</a></button></li>
+                    <li><button class="menu-items"><a href="./Order page.html">Order</a></button></li>
+                    <li><button class="menu-items"><a href="./Registration page.html">Registration</a></button></li>
+                    <li><button class="menu-items"><a href="./About Us page.html">About Us</a></button></li>
+                    <li class="menu-button" onclick=showSidebar()><button><a href="#"><svg xmlns="http://www.w3.org/2000/svg" height="25" viewBox="0 -960 960 960" width="25" fill="#FFFFFF"><path d="M120-240v-80h720v80H120Zm0-200v-80h720v80H120Zm0-200v-80h720v80H120Z"/></svg></a></button></li>
+                </ul>
+                <ul class="sidebar">
+                    <li class="cross-button" onclick=hideSidebar()><a href="#"><svg xmlns="http://www.w3.org/2000/svg" height="26" viewBox="0 -960 960 960" width="26" fill="#FFFFFF"><path d="m256-200-56-56 224-224-224-224 56-56 224 224 224-224 56 56-224 224 224 224-56 56-224-224-224 224Z"/></svg></a></li>
+                    <li><a href="./Home page.html">Home</a></li>
+                    <li><a href="./Order page.html">Order</a></li>
+                    <li><a href="./Registration page.html">Registration</a></li>
+                    <li><a href="./About Us page.html">About Us</a></li>
+                </ul>
+            </nav>
+            <script>
+                function showSidebar() {
+                    const sidebar = document.querySelector('.sidebar')
+                    sidebar.style.display = 'flex'
+                }
+                function hideSidebar() {
+                    const sidebar = document.querySelector('.sidebar')
+                    sidebar.style.display = 'none'
+                }
+            </script>
+        </section>
+    </header>
+    <main>
+        <section class="branches">
+            <h2>Our Branches</h2>
+            <!-- Branch 1 Info -->
+            <section class="branch">
+                <section class="about">
+                    <h3>Kandy Branch</h3>
+                    <p>Located in the heart of Kandy, our Fresh Foods Kandy branch supermarket offers a wide selection of fresh produce, pantry staples, and gourmet delicacies. With spacious aisles and friendly staff, shopping here is always a pleasant experience. Whether you're grabbing a quick snack or stocking up for a special occasion, we have everything you need to satisfy your cravings and culinary desires.</p>
+                </section>
+                <section class="images">
+                    <img src="./Images/Locations/kandy store.png" alt="branch 1 image" width="280px" height="280px">
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3957.5477821168424!2d80.63436567476079!3d7.2921791927153246!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3ae3662be0c2cc7f%3A0xfd9ffe3da66f497!2sKandy%20City%20Centre%2C%20Sri%20Dalada%20Veediya%2C%20Kandy%2020000!5e0!3m2!1sen!2slk!4v1715857513429!5m2!1sen!2slk" width="280px" height="280px" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                </section>
+            </section>
+            <!-- Branch 2 Info -->
+            <section class="branch">
+                <section class="about">
+                    <h3>Colombo Branch</h3>
+                    <p>Located in the heart of Colombo, our Fresh Foods Colombo branch supermarket is a hub of activity and convenience. With ample parking and easy access from major roads, it's the perfect place to shop for groceries on the go. From everyday essentials to gourmet treats, our shelves are stocked with the finest quality products to cater to all tastes and preferences. Visit us today and experience shopping made simple and enjoyable.</p>
+                </section>
+                <section class="images">
+                    <img src="./Images/Locations/colombo store.png" alt="branch 2 image" width="280px" height="280px">
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3960.693769976332!2d79.84212147475705!3d6.927160093072615!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3ae25bcfdee7764d%3A0xdf97fbb66912b0c5!2sOne%20Galle%20Face%20Mall!5e0!3m2!1sen!2slk!4v1715857773227!5m2!1sen!2slk" width="280px" height="280px" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                </section>
+            </section>
+            <!-- Branch 3 Info -->
+            <section class="branch">
+                <section class="about">
+                    <h3>Gampola Branch</h3>
+                    <p>Located in a vibrant neighborhood, our Fresh Foods Gampola branch supermarket is a community favorite for all things food and beyond. Step inside and explore our diverse range of offerings, from farm-fresh produce to artisanal goods sourced locally and internationally. With a warm and inviting atmosphere, shopping here feels like visiting an old friend. Join us in celebrating good food and good company at Fresh Foods Gampola branch.</p>
+                </section>
+                <section class="images">
+                    <img src="./Images/Locations/gampola store.png" alt="branch 3 image" width="280px" height="280px">
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3958.7113019595113!2d80.56272197475937!3d7.159337492845229!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3ae3717d2394986f%3A0x7a9db50ce1e386cc!2sKeells%20-%20Gampola!5e0!3m2!1sen!2slk!4v1715857998384!5m2!1sen!2slk" width="280px" height="280px" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                </section>
+            </section>
+            <!--Table about services-->
+            <h2>Our Services</h2>
+            <section class="service-table">
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Service</th>
+                            <th>Description</th>
+                            <th>Availability</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Delivery</td>
+                            <td>Convenient home delivery service for your groceries.</td>
+                            <td>Available</td>
+                        </tr>
+                        <tr>
+                            <td>Catering</td>
+                            <td>Professional catering services for events and gatherings.</td>
+                            <td>Available</td>
+                        </tr>
+                        <tr>
+                            <td>Party Planning</td>
+                            <td>Expert assistance in planning and organizing parties and events.</td>
+                            <td>Available</td>
+                        </tr>
+                    </tbody>
+                    <tfoot>
+                        <tr>
+                            <td colspan="3">Contact us for more information about our services.</td>
+                        </tr>
+                    </tfoot>
+                </table>
+            </section>
+        </section>
+    </main>
+    <footer>
+        <section class="footer-main">
+            <!--Info-->
+            <section class="info">
+                <a href="./Home page.html" ><img src="./Images/-high-resolution-logo-white-transparent.png" class="cart-icon" alt="cart icon" width="140px"></a>
+                <ul>
+                    <li><i class="fa fa-map-marker" aria-hidden="true"></i>Fresh Foods marketing Services Pvt Ltd.<br>
+                        No:148, Vauxhall Street, Colombo 2, Sri Lanka.</li>
+                    <li><i class="fa fa-envelope" aria-hidden="true"></i>FreshFoods@Gmail.com</li>
+                    <li><i class="fa fa-phone" aria-hidden="true"></i>+94 11 2303500</li>
+                    <li>(Daily operating hours 8.00a.m to 8.00p.m)</li>
+                </ul>
+            </section>
+            <!--Social Media Links-->
+            <section class="social-links">
+                <p>Follow Us</p>
+                <ul>
+                    <li><a href="#"><i class="fa fa-facebook"></i></a></li>
+                    <li><a href="#"><i class="fa fa-twitter"></i></a></li>
+                    <li><a href="#"><i class="fa fa-google"></i></a></li>
+                    <li><a href="#"><i class="fa fa-instagram"></i></a></li>
+                </ul>
+            </section>
+            <!--Customer Links-->
+            <section class="customerservice-links">
+                <h1>Customer Service</h1>
+                <ul>
+                    <li><a href="#">Contact Us</a></li>
+                    <li><a href="./About Us page.html">About Us</a></li>
+                </ul>
+            </section>
+        </section>
+        <section class="footer-bottom">
+            <section class="copyright">
+                <p>Copyright &copy;2024 Fresh Foods Marketing Services (Pvt) Ltd. All Rights Reserved</p>
+            </section>
+            <section class="payment-icons">
+                <img src="./Images/master card1.png"  class="mastercard-logo" alt="mastercard-logo">
+                <img src="./Images/visa1.png" class="visa-logo" alt="visa-logo">
+                <img src="./Images/american-express1.png" class="Aexpress-logo" alt="Aexpress-logo">
+            </section>
+        </section>
+    </footer>
+</body>
+</html>
+    
