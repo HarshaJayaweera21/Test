@@ -1,0 +1,103 @@
+:root {
+    --clr-main: #2B7A78;
+    --clr-primary: ;
+    --clr-secondary: #5befe1;
+    --clr-light: #ffffff;
+    --clr-dark: #000000;
+    --clr-back: #efefef;
+}
+
+
+
+
+main {
+    
+
+    .branches {
+        background-color: var(--clr-back);
+        color: #000;
+        width: 100%;
+        height: 100%;
+        padding-top: 20px;
+        padding-bottom: 20px;
+
+    }
+    
+    .branches h2 {
+        font-size: 25px;
+        font-weight: 500;
+        text-align: center;
+        margin-top: 10px;
+    }
+
+    .branch {
+        display: flex;
+        flex-wrap: wrap;
+        width: 70%;
+        height: 35%;
+        padding: 10px;
+        margin-top: 10px;
+        background-color: rgb(233, 232, 230);
+        border-radius: 10px;
+        margin-left: 15vw;
+        justify-content: center;
+    }
+    
+
+    .branch .about h3 {
+        font-size: 18px;
+        font-weight: 400;
+        text-align: center;
+    }
+    .branch .about p {
+        text-align: center;
+        font-weight: 300;
+    }
+
+    .branches .service-table table {
+        line-height: 1.5rem;
+        border-collapse: collapse;
+        margin: 25px 0;
+        min-width: 400px;
+        border-radius: 5px 5px 0 0;
+        overflow: hidden;
+        box-shadow: 0 0 20px rgba(0, 0, 0, 0.15);
+
+    }
+    .branches .service-table table thead {
+        background-color: rgb(151, 145, 145);
+        font-size: 17px;
+        font-weight: 400;
+        text-align: left;
+    }
+    .branch .images {
+        margin-top: 10px;
+    }
+    .branches .service-table table th, 
+    .branches .service-table td {
+        padding: 12px 15px;
+    }
+    .branches .service-table table tbody tr {
+        border-bottom: 1px solid #ddd;
+    }
+    .branches .service-table table tbody tr:nth-of-type(even) {
+        background-color: #f3f3f3;
+    }
+    .branches .service-table table tbody tr:last-of-type {
+        border-bottom: 2px solid rgb(151, 145, 145);
+    }
+    .branches .service-table table tfoot tr {
+        text-align: center;
+    }
+
+    .service-table {
+        display: flex;
+        flex-wrap: wrap;
+        width: 70%;
+        height: 35%;
+        background-color: var(--clr-back);
+        border-radius: 10px;
+        margin-left: 15vw;
+        justify-content: center;
+    }
+}

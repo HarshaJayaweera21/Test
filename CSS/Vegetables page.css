@@ -1,0 +1,164 @@
+:root {
+    --clr-main: #2B7A78;
+    --clr-primary: ;
+    --clr-secondary: #5befe1;
+    --clr-light: #ffffff;
+    --clr-dark: #000000;
+    --clr-back: #efefef;
+}
+
+
+
+main {
+
+    /* Products Section */
+
+    .products .vegetables-container {
+        border: 0px solid;
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(220px, 200px ));
+        gap: 10px;
+        color: #000000;
+    
+    }
+    
+    .box {
+        padding: 1rem;
+        background-color: #ffffff;
+        border-radius: .5rem;
+        text-align: center;
+    }
+    
+    .box:hover {
+        box-shadow: 1px 1px 10px 4px rgba(0, 0, 0, 0.75);
+    }
+    
+    /*.box img {
+        margin: 1rem 0;
+        height: 15rem;
+    }*/
+     
+    /*.products .box-container img {
+        width: 200px;
+        height: 200px;
+    }*/
+    
+    .vegetables-container {
+        justify-content: space-evenly;
+        padding: 20px;
+    }
+    
+    .box h3 {
+        font-size: 1rem;
+        font-weight: 300;
+        color: #000000;
+        line-height: 1rem;
+    
+    }
+    .box p {
+        font-size: 1rem;
+        font-weight: 500;
+        color: #000000;
+        line-height: 0;
+        padding: 1rem;
+    }
+    
+    .products h1 {
+        text-align: center;
+        color: #000;
+        font-size: 35px;
+        font-weight: 600;
+        margin-top: 10px;
+        margin-bottom: 10px;
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+    
+    hr {
+        width: 40vw;
+        height: 0.5px;
+        border-radius: 10%;
+        background-color: #000000;
+    }
+    
+    .shop {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+        
+    
+    .box button {
+        padding: 0.5em 1em;
+        border-radius: 0.5em;
+        background-color: aquamarine;
+        border: none;
+        outline: none;
+        cursor: pointer;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        -webkit-transition-duration: 0.3s;
+        transition-duration: 0.3s;
+        -webkit-transition-property: box-shadow, transform;
+        transition-property: box-shadow, transform;
+    }
+    .box button:hover {
+        background-color: rgb(6, 255, 172);
+    }
+
+    .about-vege {
+        color: #000;
+        font-weight: 300;
+        text-align: center;
+        font-size: 15px;
+        padding: 0 30px 0;
+    }
+    .about-vege h2 {
+        font-size: 18px;
+        font-weight: 400;
+    }
+
+    .products .banner img {
+        width: 100%;
+    } 
+    .box i {
+        padding-right: 5px;
+    }
+    .venue-box {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding-left: 50px;
+        padding-right: 50px;
+        margin-top: 10px;
+    }
+    .info-box {
+        width: 30%;
+        height: 150px;
+        align-items: center;
+        background-color: #ffffff;
+        padding: 10px;
+        border-radius: 10px;
+        text-align: center;
+    }
+    .info-box .heading {
+        font-weight: 400;
+    }
+
+    /*--------Responsive Start--------*/
+
+    @media(max-width:1050px) {
+        .venue-box {
+            flex-direction: column;
+            width: 100%;
+        }
+        .info-box {
+            width: 100%;
+            height: 100%;
+            margin-top: 10px;
+        }
+    }
+
+
+
+
+}

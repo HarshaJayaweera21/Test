@@ -1,0 +1,125 @@
+:root {
+    --clr-main: #2B7A78;
+    --clr-primary: ;
+    --clr-secondary: #5befe1;
+    --clr-light: #ffffff;
+    --clr-dark: #000000;
+    --clr-back: #efefef;
+}
+
+
+
+
+main {
+
+/*Products Section*/
+
+.cosmetics-container {
+    justify-content: space-evenly;
+    padding: 20px;
+    overflow: auto;
+}
+
+/* Scroll Bar */
+
+.cosmetics-container::-webkit-scrollbar {
+    width: 0.5rem;
+    height: 0.5rem;
+}
+.cosmetics-container::-webkit-scrollbar-thumb {
+    border-radius: .5rem;
+    background-color: #0004;
+    visibility: hidden;
+}
+
+.cosmetics-container:hover::-webkit-scrollbar-thumb  {
+    visibility: visible;
+}
+
+.products h1 {
+    text-align: center;
+    color: #000;
+    font-size: 35px;
+    font-weight: 600;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+.products .banner img{
+    width: 100%;
+}
+
+hr {
+    width: 40vw;
+    height: 0.5px;
+    border-radius: 10%;
+    background-color: #000000;
+}
+
+table, tr, td {
+    padding: 1rem;
+    border-collapse: collapse;
+}
+
+table {
+    overflow: hidden;
+    width: 100%;
+}
+
+.box {
+    height: 310px;
+    width: 220px;
+    padding: 1rem;
+    background-color: #ffffff;
+    border-radius: .5rem;
+    text-align: center;
+}
+
+.box:hover {
+    box-shadow: 1px 1px 10px 4px rgba(0, 0, 0, 0.75);
+}
+
+
+.box h3 {
+    font-size: 1rem;
+    font-weight: 300;
+    color: #000000;
+    line-height: 1rem;
+
+}
+.box p {
+    font-size: 1rem;
+    font-weight: 500;
+    color: #000000;
+    line-height: 0;
+    padding: 1rem;
+}
+.box a {
+    color: #000;
+}
+
+
+.box button {
+    padding: 0.5em 1em;
+    border-radius: 0.5em;
+    background-color: aquamarine;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    -webkit-transition-duration: 0.3s;
+    transition-duration: 0.3s;
+    -webkit-transition-property: box-shadow, transform;
+    transition-property: box-shadow, transform;
+}
+.box button:hover {
+    background-color: rgb(6, 255, 172);
+}
+
+.box i {
+    padding-right: 5px;
+}
+
+}

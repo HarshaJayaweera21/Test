@@ -1,0 +1,267 @@
+:root {
+    --clr-main: #2B7A78;
+    --clr-primary: ;
+    --clr-secondary: #5befe1;
+    --clr-light: #ffffff;
+    --clr-dark: #000000;
+    --clr-back: #efefef;
+}
+
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    
+}
+
+
+
+main {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+    background: linear-gradient(135deg, #2B7A78, rgb(6, 255, 172));
+    
+.register-container {
+    
+    max-width: 700px;
+    width: 100%;
+    background: #ffffffe0;
+    padding: 25px 30px;
+    border-radius: 5px;
+}
+
+
+.register-container .title {
+    font-size: 25px;
+    font-weight: 500;
+    color: #000000;
+    position: relative;
+}
+.title{
+    width: 100%;
+    text-align: center;
+    padding-left: 10px;
+}
+
+}
+
+.register-container form .user-details {
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin: 20px 0 12px 0;
+}
+    
+.user-details .input-box {
+    margin-bottom: 15px;
+    width: 100%;
+    
+
+}
+
+.user-details .input-box label {
+    color: #000000;
+    font-weight: 500;
+    margin-bottom: 5px;
+    display: block;
+}
+
+.user-details .input-box input {
+    color: #000000;
+    height: 45px;
+    width: 100%;
+    outline: none;
+    border-radius: 5px;
+    border: 1px solid #000000;
+    padding-left: 15px;
+    font-size: 16px;
+    border-bottom-width: 2px;
+    transition: all 0.3s ease;
+}
+.user-details .input-box input:focus,
+.user-details .input-box input:valid {
+    border-color: #2B7A78;
+}
+
+.gender-details p,h3 {
+    font-weight: 500;
+    color: #000000;
+}
+.gender-details .category {
+    display: flex;
+    width: 80%;
+    margin: 14px 0;
+    justify-content: space-between;
+}
+.gender-details .category label {
+    display: flex;
+    align-items: center;
+
+}
+.gender-details .category .dot {
+    height: 18px;
+    width: 18px;
+    background: #d9d9d9;
+    border-radius: 50%;
+    margin-right: 10px;
+    border: 5px solid transparent;
+    transition: all 0.3s ease;
+}
+.gender-details .category .dot:hover {
+    cursor: pointer;
+}
+
+#dot-1:checked ~ .category label .one,
+#dot-2:checked ~ .category label .two,
+#dot-3:checked ~ .category label .three {
+    border-color: #d9d9d9;
+    background: #2B7A78;
+}
+
+form input[type="radio"] {
+    display: none;
+}
+
+.loyalty-details p,h3 {
+    font-weight: 500;
+    color: #000000;
+}
+.loyalty-details .category {
+    display: flex;
+    width: 80%;
+    margin: 14px 0;
+    justify-content: space-between;
+}
+.loyalty-details .category label {
+    display: flex;
+    align-items: center;
+
+}
+.loyalty-details .category .dot {
+    height: 18px;
+    width: 18px;
+    background: #d9d9d9;
+    border-radius: 50%;
+    margin-right: 10px;
+    border: 5px solid transparent;
+    transition: all 0.3s ease;
+}
+.loyalty-details .category .dot:hover {
+    cursor: pointer;
+}
+
+#dot-4:checked ~ .category label .four,
+#dot-5:checked ~ .category label .five,
+#dot-6:checked ~ .category label .six {
+    border-color: #d9d9d9;
+    background: #2B7A78;
+}
+
+.loyalty-benefits h2 {
+    color: #000;
+    font-size: 15px;
+    font-weight: bold;
+}
+.loyalty-benefits h3 {
+    font-weight: 600;
+}
+.loyalty-benefits ul li {
+    color: #000;
+    margin-top: 10px;
+}
+
+form .register-btn {
+    height: 45px;
+    margin: 45px 0;
+}
+form .register-btn input {
+    height: 100%;
+    width: 100%;
+    text-align: center;
+    outline: none;
+    color: #ffffff;
+    border: none;
+    font-size: 18px;
+    font-weight: 500;
+    border-radius: 5px;
+    letter-spacing: 1px;
+    background: linear-gradient(135deg, #2B7A78, rgb(6, 255, 172));
+}
+form .register-btn input:hover {
+    background: linear-gradient(-135deg, #2B7A78, rgb(6, 255, 172));
+    cursor: pointer;
+}
+
+.check-box {
+    margin-top: 10px;
+    display: flex;
+    color: #000;
+    
+}
+.check-box label {
+    margin-left: 10px;
+    font-weight: 400;
+}
+
+input[type="checkbox"] {
+    appearance: none;
+    -webkit-appearance: none;
+    height: 18px;
+    width: 18px;
+    background-color: #d5d5d5;
+    border-radius: 1px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    outline: none;
+}
+
+input[type="checkbox"]:after {
+    font-family: "Font Awesome 5 Free";
+    font-weight: 900;
+    content: "\f00c";
+    font-size: 15px;
+    color: #000000;
+    display: none;
+}
+
+input[type="checkbox"]:hover {
+    background-color: #a5a5a5;
+}
+input[type="checkbox"]:checked:after {
+    display: block;
+}
+
+/*--------Responsive Start--------*/
+
+@media screen and (max-width: 500px) {
+    main .register-form .column {
+        flex-wrap: wrap;
+    }
+}
+@media (max-width:584px) {
+    .register-container {
+        max-width: 100%;
+    }
+    .gender-details .category {
+        width: 100%;
+    }
+}
+
+/*----------Responsive End--------*/
+
+
+
+
+
+
+
+
+
+
+
