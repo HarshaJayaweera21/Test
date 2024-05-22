@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--Font Link-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <!--CSS Links-->
+    <link rel="stylesheet" href="./CSS/Reset style sheet.css" type="text/css">
+    <link rel="stylesheet" href="./CSS/Home page.css" type="text/css">
+    <!-- Search Bar Link-->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
+    <link rel="stylesheet" href=https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css>
+    <!--Favicon-->
+    <link rel="icon" type="icon" href="./Images/letter-f.png">
+    <title>Fresh Foods Online </title>
+</head>
+<body>
+    <header class="header-main">
+        <!--LOGO-->
+        <section class="logo">
+            <a href="./index.html" ><img src="./Images/LOGO.png" class="logo" alt="logo" width="500px"></a>
+        </section>
+        <!--Search Bar-->
+        <section class="search">
+            <i class="fa fa-search"></i>
+            <input class="search-input" type="search" placeholder="Search Products ..... " name="" id="">
+        </section>
+        <section class="menu-main">
+            <!--Login/Signup Link-->
+            <section class="login-signup">
+                <ul>
+                    <li><button><a href="#"><i class="fa fa-sign-in" aria-hidden="true"></i>Login/Sign Up</a></button></li>
+                    <li><a href="#"><svg class="cart-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 -960 960 960"  fill="#FFFFFF"><path d="M280-80q-33 0-56.5-23.5T200-160q0-33 23.5-56.5T280-240q33 0 56.5 23.5T360-160q0 33-23.5 56.5T280-80Zm400 0q-33 0-56.5-23.5T600-160q0-33 23.5-56.5T680-240q33 0 56.5 23.5T760-160q0 33-23.5 56.5T680-80ZM246-720l96 200h280l110-200H246Zm-38-80h590q23 0 35 20.5t1 41.5L692-482q-11 20-29.5 31T622-440H324l-44 80h480v80H280q-45 0-68-39.5t-2-78.5l54-98-144-304H40v-80h130l38 80Zm134 280h280-280Z"/></svg></a></li>
+                </ul>
+            </section>
+            <!--NAV Bar and Menu Button-->
+            <nav class="menu">
+                <ul class="menubar">
+                    <li><button class="menu-items"><a href="./index.html">Home</a></button></li>
+                    <li><button class="menu-items"><a href="./Order page.html">Order</a></button></li>
+                    <li><button class="menu-items"><a href="./Registration page.html">Registration</a></button></li>
+                    <li><button class="menu-items"><a href="./About Us page.html">About Us</a></button></li>
+                    <li class="menu-button" onclick=showSidebar()><button><a href="#"><svg xmlns="http://www.w3.org/2000/svg" height="20" viewBox="0 -960 960 960" width="20" fill="#FFFFFF"><path d="M120-240v-80h720v80H120Zm0-200v-80h720v80H120Zm0-200v-80h720v80H120Z"/></svg></a></button></li>
+                </ul>
+                <ul class="sidebar">
+                    <li class="cross-button" onclick=hideSidebar()><a href="#"><svg xmlns="http://www.w3.org/2000/svg" height="26" viewBox="0 -960 960 960" width="26" fill="#FFFFFF"><path d="m256-200-56-56 224-224-224-224 56-56 224 224 224-224 56 56-224 224 224 224-56 56-224-224-224 224Z"/></svg></a></li>
+                    <li><a href="./index.html">Home</a></li>
+                    <li><a href="./Order page.html">Order</a></li>
+                    <li><a href="./Registration page.html">Registration</a></li>
+                    <li><a href="./About Us page.html">About Us</a></li>
+                </ul>
+            </nav>
+            <script>
+                function showSidebar() {
+                    const sidebar = document.querySelector('.sidebar')
+                    sidebar.style.display = 'flex'
+                }
+                function hideSidebar() {
+                    const sidebar = document.querySelector('.sidebar')
+                    sidebar.style.display = 'none'
+                }
+            </script>
+        </section>
+    </header>
+    <main>
+        <!--Image Slider-->
+        <section class="slider">
+            <figure>
+                <img src="./Images/image slider/image 1.png" alt="">
+                <img src="./Images/image slider/Image 2.png" alt="">
+                <img src="./Images/image slider/image 3.png" alt="">
+                <img src="./Images/image slider/image 4.png" alt="">
+            </figure>
+        </section>
+        <section class="intro">
+            <h2>Welcome to Fresh Foods</h2>
+            <p class="para">Welcome to Fresh Foods Super Market, your one-stop destination for all your grocery needs. We are committed to providing the highest quality products and exceptional customer service to make your shopping experience convenient and enjoyable.Our supermarket offers a wide range of services, including online ordering, home delivery, and personalized shopping assistance. Whether you're looking for fresh produce, pantry staples, or specialty items, we have you covered.</p>
+            <br>
+            <h3 class="services-h3">Our Services</h3>
+            <section class="services">
+                <!--Numbers in the below list doesn't display because of the reset style sheet -->
+                <ol>
+                    <li>Online Ordering</li>
+                    <li>Home Delivery</li>
+                    <li>Personal Assistance</li>
+                    <li>Loyalty Program</li>
+                </ol>
+            </section>
+        </section>
+        <!--Catergory Section-->
+        <section class="catergories">
+            <br>
+            <br>
+            <br>
+            <section class="shop">
+                <hr>
+                <h1>Shop By Category</h1>
+                <hr>
+            </section>
+            <br>
+            <section class="box-container">
+                <section class="box">
+                    <img src="./Images/vegetables1.png" alt="#" width="305px">
+                    <h3>Vegetables</h3>
+                    <p>Up to 45% off</p>
+                    <button><a href="./Vegetables page.html" class="btn">Shop Now</a></button>
+                </section>
+                <section class="box">
+                    <img src="./Images/dairy1.webp" alt="#" width="270px">
+                    <h3>Dairy Products</h3>
+                    <p>Up to 45% off</p>
+                    <button><a href="./Dairy page.html" class="btn">Shop Now</a></button>
+                </section>
+                <section class="box">
+                    <img src="./Images/skincare products.png" alt="#" width="206px">
+                    <h3>Cosmetics & Skin care</h3>
+                    <p>Up to 45% off</p>
+                    <button><a href="./Skincare page.html" class="btn">Shop Now</a></button>
+                </section>
+                <section class="box">
+                    <img src="./Images/bakery product img.png" alt="#" width="158px">
+                    <h3>Bakery Products</h3>
+                    <p>Up to 45% off</p>
+                    <button><a href="./Bakery page.html" class="btn">Shop Now</a></button>
+                </section>
+            </section>
+        </section> 
+    </main>
+    <footer>
+        <section class="footer-main">
+            <!--Info-->
+            <section class="info">
+                <a href="./index.html" ><img src="./Images/-high-resolution-logo-white-transparent.png" class="cart-icon" alt="cart icon" width="140px"></a>
+                <ul>
+                    <li><i class="fa fa-map-marker" aria-hidden="true"></i>Fresh Foods marketing Services Pvt Ltd.<br>
+                        No:148, Vauxhall Street, Colombo 2, Sri Lanka.</li>
+                    <li><i class="fa fa-envelope" aria-hidden="true"></i>FreshFoods@Gmail.com</li>
+                    <li><i class="fa fa-phone" aria-hidden="true"></i>+94 11 2303500</li>
+                    <li>(Daily operating hours 8.00a.m to 8.00p.m)</li>
+                </ul>
+            </section>
+            <!--Social Media Links-->
+            <section class="social-links">
+                <p>Follow Us</p>
+                <ul>
+                    <li><a href="#"><i class="fa fa-facebook"></i></a></li>
+                    <li><a href="#"><i class="fa fa-twitter"></i></a></li>
+                    <li><a href="#"><i class="fa fa-google"></i></a></li>
+                    <li><a href="#"><i class="fa fa-instagram"></i></a></li>
+                </ul>
+            </section>
+            <!--Customer Links-->
+            <section class="customerservice-links">
+                <h1>Customer Service</h1>
+                <ul>
+                    <li><a href="#">Contact Us</a></li>
+                    <li><a href="./About Us page.html">About Us</a></li>
+                </ul>
+            </section>
+        </section>
+        <section class="footer-bottom">
+            <section class="copyright">
+                <p>Copyright &copy;2024 Fresh Foods Marketing Services (Pvt) Ltd. All Rights Reserved</p>
+            </section>
+            <section class="payment-icons">
+                <img src="./Images/master card1.png"  class="mastercard-logo" alt="mastercard-logo">
+                <img src="./Images/visa1.png" class="visa-logo" alt="visa-logo">
+                <img src="./Images/american-express1.png" class="Aexpress-logo" alt="Aexpress-logo">
+            </section>
+        </section>
+    </footer>
+</body>
+</html>
